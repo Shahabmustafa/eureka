@@ -161,22 +161,22 @@ class _ProfileViewState extends State<ProfileView> {
               dividerColor: Colors.grey.shade400,
               labelColor: Colors.black,
               indicatorColor: EColor.primaryColor,
-              tabs: [
+              tabs: const [
                 Tab(
-                  icon: Icon(Iconsax.watch),
-                  text: "12K",
+                  icon: Icon(Iconsax.discover),
+                  text: "12",
                 ),
                 Tab(
-                  icon: Icon(Icons.bookmark_border),
-                  text: "200",
+                  icon: Icon(Iconsax.play_circle),
+                  text: "12K",
                 ),
                 Tab(
                   icon: Icon(Icons.favorite_border),
                   text: "1M",
                 ),
                 Tab(
-                  icon: Icon(Icons.people_outline),
-                  text: "12",
+                  icon: Icon(Icons.bookmark_border),
+                  text: "200",
                 ),
               ],
             ),
