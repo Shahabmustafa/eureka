@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_social_media_button/flutter_social_media_button.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,13 +26,24 @@ class _SignUpViewState extends State<SignUpView> {
               const SizedBox(
                 height: kToolbarHeight,
               ),
-              Text(
-                "Eureka",
-                style: GoogleFonts.cabin(
-                  fontWeight: FontWeight.w900,
-                  fontSize: 35,
-                  color: EColor.black,
-                ),
+              Row(
+                children: [
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.pop(context);
+                    },
+                    child: Icon(Icons.arrow_back_ios_new),
+                  ),
+                  SizedBox(width: 10,),
+                  Text(
+                    "Eureka",
+                    style: GoogleFonts.cabin(
+                      fontWeight: FontWeight.w900,
+                      fontSize: 30,
+                      color: EColor.black,
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(
                 height: kToolbarHeight,
