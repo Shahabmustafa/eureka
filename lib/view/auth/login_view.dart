@@ -1,4 +1,5 @@
 import 'package:eureka/utils/color.dart';
+import 'package:eureka/view/auth/forget_password_view.dart';
 import 'package:eureka/view/auth/signup_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +34,7 @@ class _LoginViewState extends State<LoginView> {
                     "Eureka",
                     style: GoogleFonts.cabin(
                       fontWeight: FontWeight.w900,
-                      fontSize: 35,
+                      fontSize: 30,
                       color: EColor.black,
                     ),
                   ),
@@ -114,7 +115,7 @@ class _LoginViewState extends State<LoginView> {
                     children: [
                       TextButton(
                         onPressed: (){
-
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgetPasswordView()));
                         },
                         child: Text(
                           "Forget Password",
