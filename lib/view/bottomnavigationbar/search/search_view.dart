@@ -51,6 +51,10 @@ class _SearchViewState extends State<SearchView> {
             child: TextFormField(
               decoration: InputDecoration(
                 border: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                errorBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+                focusedErrorBorder: InputBorder.none,
                 hintText: "Search User",
                 hintStyle: GoogleFonts.cabin(
                   fontSize: 16,
